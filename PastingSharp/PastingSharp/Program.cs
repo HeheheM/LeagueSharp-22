@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +28,7 @@ namespace PastingSharp
             menu.AddToMainMenu();
             Game.PrintChat("PastingSharp loaded. Press P to paste.");
 
-            Game.OnGameUpdate += Game_OnGameUpdate;
+            Game.OnUpdate += Game_OnGameUpdate;
         }
         public static void Game_OnGameUpdate(EventArgs args)
         {
